@@ -94,10 +94,20 @@
     "comment" : "Specific license for datasets published by the Flemish government.",
     "seeAlso" : ""
   },
-   {
+  {
+    "identifier": "vl-gratis-niet-commercieel-billijk-commercieel",
+    "title": "Modellicentie 4a+4b - Gratis Open Data Licentie voor Niet-Commercieel Hergebruik en Open Data Licentie voor Commercieel Hergebruik - v1.2",
+    "@id": "http://opendataforum.info/Docs/licenties/BV.htm",
+    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
+    "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
+    "requires" : [ "cc:Attribution" ],
+    "comment" : "Specific license for datasets published by the Flemish government.",
+    "seeAlso" : ""
+  },
+  {
     "identifier": "vl-billijke-vergoeding",
     "title": "Open Data Licentie tegen Billijke Vergoeding",
-    "@id": "http://opendataforum.info/Docs/licenties/BV.htm",
+    "@id": "http://opendataforum.info/Docs/licenties/GOD_BV.htm",
     "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
     "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
     "requires" : [ "cc:Attribution", "cc:Notice", "cc:ShareAlike" ],
