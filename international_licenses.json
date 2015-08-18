@@ -12,7 +12,8 @@
   "@graph" : [
   {
     "identifier": "notspecified",
-    "title": "License Not Specified"
+    "title": "License Not Specified",
+    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"]
   },
   {
     "identifier": "odc-pddl",
