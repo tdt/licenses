@@ -1,130 +1,318 @@
 {
-  "@context" : {
-    "title" : "http://purl.org/dc/terms/title",
-    "identifier" : "http://purl.org/dc/terms/identifier",
-    "seeAlso" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
-    "cc" : "http://creativecommons.org/ns#",
-    "permits" : { "@id":"http://creativecommons.org/ns#permits", "@type" : "@id" },
-    "requires" : { "@id":"http://creativecommons.org/ns#requires", "@type" : "@id" },
-    "prohibits" : { "@id" : "http://creativecommons.org/ns#prohibits", "@type" : "@id"}
-  },
-  "@graph" : [
-  {
-    "title": "License Not Specified",
-    "comment" : "License is not specified.",
-    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"]
-  },
-  {
-    "identifier": "odc-pddl",
-    "title": "Open Data Commons Public Domain Dedication and Licence (PDDL)",
-    "@id": "http://opendatacommons.org/licenses/pddl/1.0/",
-    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
-    "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
-    "requires" : [  ],
-    "comment" : "",
-    "seeAlso" : "http://opendefinition.org/licenses/odc-pddl/"
-  },
-  {
-    "identifier": "odc-odbl",
-    "title": "Open Data Commons Open Database License (ODbL)",
-    "@id": "http://opendatacommons.org/licenses/odbl/1.0/",
-    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
-    "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
-    "requires" : [ "cc:Attribution", "cc:Notice", "cc:ShareAlike" ],
-    "comment" : "",
-    "seeAlso" : "http://opendefinition.org/licenses/odc-odbl/"
-  },
-  {
-    "identifier": "odc-by",
-    "title": "Open Data Commons Attribution License",
-    "@id": "http://opendatacommons.org/licenses/by/1.0/",
-    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
-    "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
-    "requires" : [ "cc:Attribution" ],
-    "comment" : "",
-    "seeAlso" : "http://opendefinition.org/licenses/odc-by/"
-  },
-  {
-    "identifier": "cc-zero",
-    "title": "Creative Commons CCZero",
-    "@id": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
-    "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
-    "requires" : [  ],
-    "comment" : "",
-    "seeAlso" : "http://www.opendefinition.org/licenses/cc-zero"
-  },
-  {
-    "identifier": "cc-by",
-    "title": "Creative Commons Attribution",
-    "@id": "http://creativecommons.org/licenses/by/4.0/",
-    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
-    "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
-    "requires" : [ "cc:Attribution", "cc:Notice" ],
-    "comment" : "",
-    "seeAlso" : "http://www.opendefinition.org/licenses/cc-by"
-  },
-  {
-    "identifier": "cc-by-sa",
-    "title": "Creative Commons Attribution Share-Alike",
-    "@id": "http://creativecommons.org/licenses/by-sa/4.0/",
-    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
-    "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
-    "requires" : [ "cc:Attribution", "cc:ShareAlike" ],
-    "comment" : "",
-    "seeAlso" : "http://www.opendefinition.org/licenses/cc-by-sa"
-  },
-  {
-    "identifier": "gfdl",
-    "title": "GNU Free Documentation License",
-    "@id": "http://opendefinition.org/licenses/gfdl/",
-    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
-    "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
-    "requires" : [ "cc:Copyleft" ],
-    "comment" : "",
-    "seeAlso" : "http://www.gnu.org/licenses/fdl"
-  },
-  {
-    "identifier": "vl-gratis",
-    "title": "Modellicentie 2 - Gratis Open Data Licentie - v1.2",
-    "@id": "http://opendataforum.info/Docs/LICENTIES_2014/Modellicentie 2 - Gratis Open Data Licentie - v1.2.htm",
-    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
-    "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
-    "requires" : [ "cc:Attribution" ],
-    "comment" : "Specific license for datasets published by the Flemish government.",
-    "seeAlso" : ""
-  },
-  {
-    "identifier": "vl-gratis-niet-commercieel-billijk-commercieel",
-    "title": "Modellicentie 4a+4b - Gratis Open Data Licentie voor Niet-Commercieel Hergebruik en Open Data Licentie voor Commercieel Hergebruik - v1.2",
-    "@id": "http://opendataforum.info/Docs/licenties/BV.htm",
-    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
-    "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
-    "requires" : [ "cc:Attribution" ],
-    "comment" : "Specific license for datasets published by the Flemish government.",
-    "seeAlso" : ""
-  },
-  {
-    "identifier": "vl-billijke-vergoeding",
-    "title": "Open Data Licentie tegen Billijke Vergoeding",
-    "@id": "http://opendataforum.info/Docs/licenties/GOD_BV.htm",
-    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
-    "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
-    "requires" : [ "cc:Attribution", "cc:Notice", "cc:ShareAlike" ],
-    "comment" : "",
-    "seeAlso" : ""
-  },
-  {
-    "identifier": "cc-nc",
-    "title": "Creative Commons Non-Commercial (Any)",
-    "@id": "http://creativecommons.org/licenses/by-nc/2.0/",
-    "@type" : [ "http://creativecommons.org/ns#License","http://purl.org/dc/terms/LicenseDocument"],
-    "permits" : ["cc:Reproduction","cc:DerivativeWorks","cc:Distribution"],
-    "requires" : [ "cc:Attribution", "cc:Notice", "cc:ShareAlike" ],
-    "prohibits" : ["cc:CommercialUse"],
-    "comment" : "",
-    "seeAlso" : "http://creativecommons.org/licenses/by-nc/2.0/legalcode"
-  }
-]
+	"@context": {
+		"title": "http://purl.org/dc/terms/title",
+		"identifier": "http://purl.org/dc/terms/identifier",
+		"seeAlso": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+		"comment": "http://www.w3.org/2000/01/rdf-schema#comment",
+		"cc": "http://creativecommons.org/ns#",
+		"permits": {
+			"@id": "http://creativecommons.org/ns#permits",
+			"@type": "@id"
+		},
+		"requires": {
+			"@id": "http://creativecommons.org/ns#requires",
+			"@type": "@id"
+		},
+		"prohibits": {
+			"@id": "http://creativecommons.org/ns#prohibits",
+			"@type": "@id"
+		}
+	},
+	"@graph": [{
+		"title": "License Not Specified",
+		"comment": "License is not specified.",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		]
+	}, {
+		"identifier": "odc-pddl",
+		"title": "Open Data Commons Public Domain Dedication and Licence (PDDL)",
+		"@id": "http://opendatacommons.org/licenses/pddl/1.0/",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+
+		],
+		"comment": "",
+		"seeAlso": "http://opendefinition.org/licenses/odc-pddl/"
+	}, {
+		"identifier": "odc-odbl",
+		"title": "Open Data Commons Open Database License (ODbL)",
+		"@id": "http://opendatacommons.org/licenses/odbl/1.0/",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Attribution",
+			"cc:Notice",
+			"cc:ShareAlike"
+		],
+		"comment": "",
+		"seeAlso": "http://opendefinition.org/licenses/odc-odbl/"
+	}, {
+		"identifier": "odc-by",
+		"title": "Open Data Commons Attribution License",
+		"@id": "http://opendatacommons.org/licenses/by/1.0/",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Attribution"
+		],
+		"comment": "",
+		"seeAlso": "http://opendefinition.org/licenses/odc-by/"
+	}, {
+		"identifier": "cc-zero",
+		"title": "Creative Commons CCZero",
+		"@id": "https://creativecommons.org/publicdomain/zero/1.0/",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+
+		],
+		"comment": "",
+		"seeAlso": "http://www.opendefinition.org/licenses/cc-zero"
+	}, {
+		"identifier": "cc-by",
+		"title": "Creative Commons Attribution",
+		"@id": "http://creativecommons.org/licenses/by/4.0/",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Attribution",
+			"cc:Notice"
+		],
+		"comment": "",
+		"seeAlso": "http://www.opendefinition.org/licenses/cc-by"
+	}, {
+		"identifier": "cc-by-sa",
+		"title": "Creative Commons Attribution Share-Alike",
+		"@id": "http://creativecommons.org/licenses/by-sa/4.0/",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Attribution",
+			"cc:ShareAlike"
+		],
+		"comment": "",
+		"seeAlso": "http://www.opendefinition.org/licenses/cc-by-sa"
+	}, {
+		"identifier": "gfdl",
+		"title": "GNU Free Documentation License",
+		"@id": "http://opendefinition.org/licenses/gfdl/",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Copyleft"
+		],
+		"comment": "",
+		"seeAlso": "http://www.gnu.org/licenses/fdl"
+	}, {
+		"identifier": "vl-gratis-hergebruik",
+		"title": "Modellicentie Gratis Hergebruik - v1.0",
+		"@id": "http://overheid.vlaanderen.be/hergebruik/licenties/v1-0/html/modellicentie-gratis-hergebruik",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Attribution"
+		],
+		"comment": "Specific license for datasets published by the Flemish government.",
+		"seeAlso": ""
+	}, {
+		"identifier": "vl-cc0",
+		"title": "Modellicentie 1 - CC0-verklaring",
+		"@id": "http://overheid.vlaanderen.be/hergebruik/licenties/v1-0/html/cc0",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Attribution"
+		],
+		"comment": "Specific license for datasets published by the Flemish government.",
+		"seeAlso": ""
+	}, {
+		"identifier": "vl-OD-tegen-vergoeding",
+		"title": "Open Data Licentie tegen Billijke Vergoeding",
+		"@id": "http://overheid.vlaanderen.be/opendata/licenties/v1-2/html/open-data-licentie-tegen-billijke-vergoeding",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Attribution",
+			"cc:Notice",
+			"cc:ShareAlike"
+		],
+		"comment": "",
+		"seeAlso": ""
+	}, {
+		"identifier": "vl-hergebruik-tegen-vergoeding",
+		"title": "Modellicentie Hergebruik Tegen Vergoeding",
+		"@id": "http://overheid.vlaanderen.be/hergebruik/licenties/v1-0/html/modellicentie-hergebruik-tegen-vergoeding",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Attribution",
+			"cc:Notice",
+			"cc:ShareAlike"
+		],
+		"comment": "",
+		"seeAlso": ""
+	}, {
+		"identifier": "vl-OD-tegen-vergoeding-commercieel-hergebruik",
+		"title": "Open Data Licentie tegen Billijke Vergoeding voor Commercieel Hergebruik",
+		"@id": "http://overheid.vlaanderen.be/opendata/licenties/v1-2/html/open-data-licentie-tegen-billijke-vergoeding-voor-commercieel_hergebruik",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Attribution",
+			"cc:Notice",
+			"cc:ShareAlike"
+		],
+		"comment": "",
+		"seeAlso": ""
+	}, {
+		"identifier": "vl-gratis-OD-niet-commercieel",
+		"title": "Modellicentie 4a - Gratis Open Data Licentie voor Niet-Commercieel Hergebruik - v1.2",
+		"@id": "http://overheid.vlaanderen.be/opendata/licenties/v1-2/html/gratis-open-data-licentie-voor-niet-commercieel-hergebruik",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Attribution",
+			"cc:Notice",
+			"cc:ShareAlike"
+		],
+		"comment": "",
+		"seeAlso": ""
+	}, {
+		"identifier": "vl-gratis-OD",
+		"title": "Modellicentie 2 - Gratis Open Data Licentie - v1.2",
+		"@id": "http://overheid.vlaanderen.be/opendata/licenties/v1-2/html/gratis-open-data-licentie",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Attribution",
+			"cc:Notice",
+			"cc:ShareAlike"
+		],
+		"comment": "",
+		"seeAlso": ""
+	}, {
+		"identifier": "cc-nc",
+		"title": "Creative Commons Non-Commercial (Any)",
+		"@id": "http://creativecommons.org/licenses/by-nc/2.0/",
+		"@type": [
+			"http://creativecommons.org/ns#License",
+			"http://purl.org/dc/terms/LicenseDocument"
+		],
+		"permits": [
+			"cc:Reproduction",
+			"cc:DerivativeWorks",
+			"cc:Distribution"
+		],
+		"requires": [
+			"cc:Attribution",
+			"cc:Notice",
+			"cc:ShareAlike"
+		],
+		"prohibits": [
+			"cc:CommercialUse"
+		],
+		"comment": "",
+		"seeAlso": "http://creativecommons.org/licenses/by-nc/2.0/legalcode"
+	}]
 }
